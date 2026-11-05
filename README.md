@@ -213,4 +213,5 @@ trader-pelosi/      SKILL.md, ptr.py
 tests/              unittest suite + offline fixtures
 ```
 
-MIT. Made by [Jake Schincariol](https://opusjake.ai).
+MIT. Maintained by [houriyassine799-dev](https://github.com/houriyassine799-dev).
+Originally made by [Jake Schincariol](https://opusjake.ai).
