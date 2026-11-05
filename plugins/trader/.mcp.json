@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "alpaca": {
+      "command": "uvx",
+      "args": ["alpaca-mcp-server"],
+      "env": {
+        "ALPACA_API_KEY": "${ALPACA_API_KEY:-}",
+        "ALPACA_SECRET_KEY": "${ALPACA_SECRET_KEY:-}",
+        "ALPACA_PAPER_TRADE": "${ALPACA_PAPER_TRADE:-true}",
+        "ALPACA_TOOLSETS": "${ALPACA_TOOLSETS:-account,trading,stock-data}"
+      }
+    },
+    "polygon": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/polygon-io/mcp_polygon", "mcp_polygon"],
+      "env": {
+        "POLYGON_API_KEY": "${POLYGON_API_KEY:-}"
+      }
+    },
+    "sec-edgar": {
+      "command": "uvx",
+      "args": ["sec-edgar-mcp"],
+      "env": {
+        "SEC_EDGAR_USER_AGENT": "${SEC_EDGAR_USER_AGENT:-}"
+      }
+    }
+  }
+}

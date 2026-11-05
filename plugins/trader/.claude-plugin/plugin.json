@@ -1,0 +1,13 @@
+{
+  "name": "trader",
+  "description": "Day-Trading-Pipeline in 11 Slash-Commands: Scanner, News, Entry, Exit, Time Machine, Risk, Budget, Broker, Alerts, Earnings-Analyst und Congress-Tracker. Paper Trading ist Standard, keine Order ohne ausdrückliches Ja.",
+  "version": "1.0.0",
+  "author": {
+    "name": "houriyassine799-dev",
+    "url": "https://github.com/houriyassine799-dev"
+  },
+  "homepage": "https://github.com/houriyassine799-dev/day-trader-skill/tree/main/plugins/trader",
+  "repository": "https://github.com/houriyassine799-dev/day-trader-skill",
+  "license": "MIT",
+  "keywords": ["day-trading", "paper-trading", "alpaca", "risk-management", "backtesting", "monte-carlo", "sec-edgar"]
+}

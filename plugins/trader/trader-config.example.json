@@ -1,0 +1,43 @@
+{
+  "_hinweis": "Kopie nach trader/trader-config.json (trader.py init). Keine API-Keys in diese Datei: nur die NAMEN der Umgebungsvariablen (Felder *_env).",
+  "mode": "paper",
+  "account_currency": "EUR",
+  "account_budget": 10000,
+  "max_loss_per_trade": { "value": 1, "unit": "%" },
+  "max_daily_loss": { "value": 300, "unit": "EUR" },
+  "max_open_positions": 3,
+  "max_position_size": { "value": 25, "unit": "%" },
+  "min_reward_risk": 2.0,
+  "allow_short": false,
+  "watchlist": ["AAPL", "MSFT", "NVDA", "TSLA", "AMD", "META", "AMZN"],
+  "timezone": "Europe/Berlin",
+  "_hinweis_trading_hours": "In Europe/Berlin. US-Boersen oeffnen meist 15:30 Berlin, in den Wochen der Zeitumstellung 14:30. Die Boersenzeit selbst wird zusaetzlich in der Zeitzone der Boerse geprueft.",
+  "trading_hours": { "start": "15:30", "end": "21:45" },
+  "default_exchange": "NASDAQ",
+  "exchanges": {
+    "NASDAQ": { "timezone": "America/New_York", "open": "09:30", "close": "16:00", "currency": "USD" },
+    "NYSE": { "timezone": "America/New_York", "open": "09:30", "close": "16:00", "currency": "USD" },
+    "XETRA": { "timezone": "Europe/Berlin", "open": "09:00", "close": "17:30", "currency": "EUR" }
+  },
+  "broker": {
+    "name": "Alpaca",
+    "api": "Alpaca Paper API",
+    "mcp_server": "alpaca",
+    "key_env": ["ALPACA_API_KEY", "ALPACA_SECRET_KEY"]
+  },
+  "data_sources": {
+    "market_data": { "name": "Alpaca Market Data / Polygon.io", "mcp_server": "polygon", "key_env": ["POLYGON_API_KEY"] },
+    "news": { "name": "Polygon News / Finnhub", "key_env": ["POLYGON_API_KEY", "FINNHUB_API_KEY"] },
+    "earnings": { "name": "SEC EDGAR", "mcp_server": "sec-edgar", "user_agent_env": "SEC_EDGAR_USER_AGENT" },
+    "congress": { "name": "House Clerk / Senate eFD (frei) oder Quiver Quantitative", "key_env": ["QUIVER_API_KEY"] }
+  },
+  "pipeline": { "max_age_minutes": 30, "confirm_within_minutes": 10 },
+  "timemachine": {
+    "simulations": 10000,
+    "horizon_bars": 78,
+    "min_backtest_samples": 20,
+    "block_negative_expectancy": true
+  },
+  "news": { "reaction_window_minutes": 15, "min_move_pct": 2.0, "min_volume_ratio": 2.0 },
+  "entry": { "volume_multiple": 1.5, "volume_lookback": 20 }
+}

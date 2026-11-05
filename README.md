@@ -57,6 +57,19 @@ The tools need Python 3.8 or newer. Nothing to pip install. The SEC tools
 email in `trader/config.json` (`"sec_user_agent": "Your Name you@example.com"`)
 or in the `SEC_USER_AGENT` environment variable.
 
+### The `trader` plugin (German, pipeline-enforced)
+
+This marketplace also ships a second plugin, `trader`, in
+[`plugins/trader`](plugins/trader/README.md): the same eleven roles as German
+slash commands, a shared `trader-config.json`, a `.mcp.json` for Alpaca,
+Polygon and SEC EDGAR, a `journal.csv` for every action, and a hard-wired order
+gate (`/trader-exit`, then `/trader-timemachine`, `/trader-risk`,
+`/trader-budget`, `/trader-broker`, then an explicit "Ja").
+
+```
+/plugin install trader@day-trader-skill
+```
+
 ## The eleven
 
 | command | job | what it does |

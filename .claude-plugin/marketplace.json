@@ -13,6 +13,13 @@
       "source": "./",
       "category": "productivity",
       "homepage": "https://github.com/houriyassine799-dev/day-trader-skill"
+    },
+    {
+      "name": "trader",
+      "description": "Day-Trading-Pipeline in 11 Slash-Commands (Scanner, News, Entry, Exit, Time Machine, Risk, Budget, Broker, Alerts, Analyst, Congress-Tracker). Paper Trading ist Standard, keine Order ohne ausdrückliches Ja, feste Reihenfolge exit, timemachine, risk, budget, broker.",
+      "source": "./plugins/trader",
+      "category": "productivity",
+      "homepage": "https://github.com/houriyassine799-dev/day-trader-skill/tree/main/plugins/trader"
     }
   ]
 }
